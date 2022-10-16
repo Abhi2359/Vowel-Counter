@@ -15,25 +15,6 @@
             Vowel <span id="vowelCount">0</span>
         </p>
     </div>
-    <script type="text/javascript">
-        var vowelCount = document.getElementById('vowelCount');
-        function countVowel(str) {
-            str = str.toLowerCase();
-            let vowArr =['a','e','i','o','u'],
-            counter=0;
-
-            for(let letter of str) {
-                if(vowArr.includes(letter)){
-                    counter++;
-                    vowelCount.classList.add('blink');
-                }
-                else{
-                    vowelCount.classList.remove('blink');
-                }
-            }
-
-            vowelCount.innerHTML=counter;
-        }
-    </script>
+    <script src="App.js"></script>
 </body>
 </html>
